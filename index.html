@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta Ray - Official Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Kanit', 'sans-serif'] },
+                    colors: {
+                        taray: {
+                            bg: '#0a101f', // ดำ-น้ำเงินเข้ม
+                            primary: '#0a101f', // ดำ-น้ำเงินเข้ม
+                            primaryLight: '#2c3e50', // ดำ-น้ำเงินเข้ม (สว่างขึ้นเล็กน้อย)
+                            accent: '#3498db', // น้ำเงินสด (เน้น)
+                            accentLight: '#99c2ff', // ฟ้าอ่อน (เน้น)
+                            text: '#f8f9fa', // ขาว
+                            textLight: '#99c2ff', // ฟ้าอ่อน (テキストเน้น)
+                        }
+                    },
+                    animation: {}, // ตัดอนิเมชั่นเยอะๆ ออก
+                    keyframes: {} // ตัดอนิเมชั่นเยอะๆ ออก
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            background: linear-gradient(-45deg, #0a101f, #1a253a, #0a101f, #1a253a);
+            background-size: 400% 400%;
+            overflow-x: hidden; 
+        }
+
+        .minimal-card {
+            background: rgba(10, 16, 31, 0.95);
+            border: 1px solid rgba(153, 194, 255, 0.1);
+            border-radius: 20px;
+        }
+        .minimal-inner { border-radius: 15px; }
+        ::-webkit-scrollbar { width: 0px; }
+    </style>
+</head>
+<body class="antialiased font-sans flex justify-center selection:bg-blue-200">
+
+    <main class="w-full max-w-[480px] min-h-screen relative z-10 bg-taray-bg/20 shadow-2xl sm:my-8 sm:rounded-[40px] overflow-hidden border border-taray-textLight/10 pb-20">
+        
+        <div class="header pt-10 pb-6 px-6 text-center minimal-card m-6">
+            <div class="relative w-full mb-6">
+                <div class="aspect-square w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-taray-textLight shadow-[0_0_20px_rgba(153,194,255,0.4)]">
+                    <img src="" alt="Ta Ray Banner" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-2 -right-2 text-taray-textLight">
+                    <i class="fa-solid fa-sparkles text-xl"></i>
+                </div>
+            </div>
+            <h1 class="text-3xl font-bold text-taray-text mb-2 tracking-tighter">Ta Ray</h1>
+            <p class="text-[14px] text-taray-text leading-relaxed px-4 font-medium">
+                ร้าน Ta Ray รับฝากขาย รับทำป้ายฝากขาย ป้ายเรทต่างๆ ป้ายคิวอาร์ ปกเครดิต ป้ายไอดียังไม่รับทำและรับหาไอดี ✦
+            </p>
+        </div>
+
+        <div class="px-6 space-y-5 mb-10 Links Section">
+            <a href="https://docs.google.com/spreadsheets/d/1-kKlNjdrTLPbQ0ogYQt7Fb-QtCoLyMmX0H57NfEOMwA/edit?usp=drivesdk" 
+               target="_blank" 
+               class="flex items-center justify-between bg-taray-primaryLight text-taray-text p-5 rounded-full shadow-[0_5px_15px_rgba(44,62,80,0.5)] hover:scale-105 transition-all minimal-card">
+                <span class="font-bold flex items-center gap-3"><i class="fa-solid fa-clock text-taray-accent"></i> ตรวจสอบคิว & อัปเดตสินค้า</span>
+                <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+        </div>
+
+        <div class="px-5 space-y-6 Main Content Sections">
+            
+            <div class="minimal-card p-2 Section: How to Order">
+                <div class="minimal-inner p-5 bg-taray-primaryLight/30">
+                    <h3 class="font-bold text-taray-accentLight mb-4 flex items-center gap-3 text-lg">
+                        <i class="fa-solid fa-cart-shopping bg-taray-bg/50 p-2.5 rounded-full text-sm"></i> ขั้นตอนการสั่งซื้อ
+                    </h3>
+                    <ul class="text-[13.5px] space-y-3 text-taray-text font-medium">
+                        <li class="flex gap-2.5"><i class="fa-solid fa-caret-right text-taray-accentLight mt-1"></i> <span>1 ทักแชทแจ้งความต้องการ (หาไอดี / ฝากขาย / ทำป้ายเรท)</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-caret-right text-taray-accentLight mt-1"></i> <span>2 ส่งรายละเอียดตามบรีฟ ฟอร์ม หรือรูปภาพที่ต้องใช้ทำป้าย</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-caret-right text-taray-accentLight mt-1"></i> <span>3 ชำระเงินตามเรทราคาที่ตกลง (ชำระก่อนเริ่มงาน)</span></li>
+                        <li class="flex gap-2.5"><i class="fa-solid fa-caret-right text-taray-accentLight mt-1"></i> <span>4 รอรับคิวและงานตามกำหนด เช็คคิวผ่านเว็บได้เลยครับ</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="minimal-card p-2 Section: Price Rates & Services">
+                <div class="minimal-inner p-5 bg-taray-primaryLight/30">
+                    <h3 class="font-bold text-taray-accentLight mb-4 flex items-center gap-3 text-lg">
+                        <i class="fa-solid fa-tags bg-taray-bg/50 p-2.5 rounded-full text-sm"></i> เรทราคาและบริการ
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-bold text-taray-text text-[14px] mb-3">เรทราคาฝากขาย (ป้ายสีดำ-ทอง)</p>
+                            <img src="" alt="เรทราคาฝากขาย" class="w-full h-auto rounded-lg shadow-md mb-4 minimal-card border-none">
+                            <div class="text-[13px] text-taray-text space-y-3 font-medium">
+                                <p class="font-extrabold text-taray-textLight">TABAY (ร้านตาเรย์)</p>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <ul class="space-y-1 pl-4 list-disc">
+                                        <li>500 – 900 — 15 B</li>
+                                        <li>1000 – 1499 — 25 B</li>
+                                        <li>1500 – 1999 — 30 B</li>
+                                        <li>2000 – 2499 — 45 B</li>
+                                        <li>2500 – 4499 — 57 B</li>
+                                        <li>4500 – 5999 — 65 B</li>
+                                        <li>6000 – 7500 — 80 B</li>
+                                        <li>7501 – 8500 — 95 B</li>
+                                    </ul>
+                                    <ul class="space-y-1 pl-4 list-disc">
+                                        <li>8501 – 9999 — 145 B</li>
+                                        <li>10,000+ — 1.9%</li>
+                                        <li>14,000+ — 2.5%</li>
+                                        <li>19,000+ — 3.5%</li>
+                                        <li>30,000+ — 4.5%</li>
+                                        <li>50,000+ — 4.7%</li>
+                                        <li>70,000+ — 5%</li>
+                                        <li>100,000 — 5.5%</li>
+                                    </ul>
+                                </div>
+                                <p class="font-bold text-taray-textLight/70 italic bg-taray-bg/30 p-2.5 rounded-xl border border-taray-textLight/10">หมายเหตุท้ายป้าย: คนที่เพิ่งใช้บริการจ่ายก่อนทุกกรณี</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-5 border-t border-taray-textLight/10">
+                            <p class="font-bold text-taray-text text-[14px] mb-3">เรทราคาหาไอดี (ป้ายสีขาว-ดอกไม้)</p>
+                            <img src="" alt="เรทราคาหาไอดี" class="w-full h-auto rounded-lg shadow-md mb-4 minimal-card border-none">
+                            <div class="text-[13px] text-taray-text space-y-2.5 font-medium">
+                                <p class="font-extrabold text-taray-textLight">รับบริการหาไอดีของร้าน Ta Ray</p>
+                                <p class="font-bold">เรทราคาหาไอดี</p>
+                                <ul class="space-y-1 pl-4 list-disc">
+                                    <li>1 – 900 = 40 B</li>
+                                    <li>901 – 1900 = 57 B</li>
+                                    <li>1901 – 3500 = 75 B</li>
+                                    <li>3501 – 6000 = 90 B</li>
+                                    <li>6001 – 9000 = 120 B</li>
+                                    <li>9001 – 9,999 = 145 B</li>
+                                    <li>10,000+++ = 170 B</li>
+                                    <li>15,000+++ = 200 B</li>
+                                    <li>30,000+++ = 250 B</li>
+                                    <li>50,000+++ = 275 B</li>
+                                    <li>100,000+++ = 300 B</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="minimal-card p-2 Section: Queue & Consignment">
+                <div class="minimal-inner p-5 bg-taray-primaryLight/30">
+                    <h3 class="font-bold text-taray-accentLight mb-4 flex items-center gap-3 text-lg">
+                        <i class="fa-solid fa-file-contract bg-taray-bg/50 p-2.5 rounded-full text-sm"></i> รายละเอียดเช็คคิวและฝากขาย
+                    </h3>
+                    <div class="space-y-4 text-[13.5px] font-medium text-taray-text">
+                        <p class="font-extrabold text-taray-textLight">วิธีการฝากขายทางร้านTa Ray</p>
+                        <ul class="pl-4 list-disc space-y-1">
+                            <li>ต้องเตรียมรูปดังนี้: สกิน เครื่องประดับ สัตว์เลี้ยง ของในคลัง ยอดเติม แรงค์</li>
+                            <li>และจะมีแบบฟอร์มให้กรอก</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="minimal-card p-2 Section: FAQ">
+                <div class="minimal-inner p-5 bg-taray-primaryLight/30">
+                    <h3 class="font-bold text-taray-accentLight mb-4 flex items-center gap-3 text-lg">
+                        <i class="fa-solid fa-circle-question bg-taray-bg/50 p-2.5 rounded-full text-sm"></i> คำถามที่พบบ่อย
+                    </h3>
+                    <div class="text-[13.5px] space-y-4 text-taray-text font-medium">
+                        <div class="bg-taray-bg/30 p-3 rounded-xl border border-taray-textLight/10 shadow-sm">
+                            <p class="font-bold text-taray-textLight">Q: รับงานด่วนไหมครับ?</p>
+                            <p>A: สามารถทักมาสอบถามคิวงานก่อนได้ครับ หากคิวไม่เยอะทางร้านยินดีลัดคิวให้ฟรี</p>
+                        </div>
+                        <div class="bg-taray-bg/30 p-3 rounded-xl border border-taray-textLight/10 shadow-sm">
+                            <p class="font-bold text-taray-textLight">Q: มีประกันหลังการขายไหม?</p>
+                            <p>A: หากงานเกิดข้อผิดพลาดจากทางร้าน (สะกดผิด/ข้อมูลตกหล่น) แก้ไขให้ฟรีทันทีครับ</p>
+                        </div>
+                        <div class="bg-taray-bg/30 p-3 rounded-xl border border-taray-textLight/10 shadow-sm">
+                            <p class="font-bold text-taray-textLight">Q: สามารถยกเลิกงานและขอคืนเงินได้ไหม?</p>
+                            <p>A: หากทางร้านเริ่มดำเนินการไปแล้ว จะไม่สามารถขอคืนเงินได้ในทุกกรณีครับ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="pt-6 Section: Contact">
+                <h3 class="text-center font-bold text-taray-textLight mb-4 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-comments text-taray-accent"></i> ช่องทางติดต่อ
+                </h3>
+                <div class="px-2">
+                    <a href="https://www.facebook.com/share/1HXq3wncat/?mibextid=wwXIfr" target="_blank" class="minimal-card p-4 flex items-center gap-4 hover:scale-[1.05] transition-all minimal-inner">
+                        <div class="w-14 h-14 bg-blue-600 rounded-[15px] flex items-center justify-center text-taray-text text-3xl">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-taray-text text-[15px]">Ta Ray (มะเหมี่ยว บลูอาย)</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square ml-auto text-gray-400 text-sm"></i>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="mt-16 text-center px-10 pb-8">
+            <p class="text-taray-textLight/40 text-[12px] font-bold">
+                ขอบคุณที่ไว้วางใจร้าน Ta Ray นะครับ 💙☁️
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
